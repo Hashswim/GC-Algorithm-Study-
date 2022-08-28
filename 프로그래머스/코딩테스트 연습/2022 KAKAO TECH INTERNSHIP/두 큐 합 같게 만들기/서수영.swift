@@ -14,7 +14,7 @@ func solution(_ queue1:[Int], _ queue2:[Int]) -> Int {
     
     var now = totalQueue[start..<end].reduce(0, +)
     while true{
-        if start == end || start + halfQueue.count + 1 == end || start >= halfQueue.count{
+        if start == end || start + halfQueue.count == end || start >= halfQueue.count{
             return -1
         }
         
